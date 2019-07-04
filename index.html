@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>VIP Homes Services</title>
+</head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+body, html {
+    height: 100%;
+    line-height: 1.8;
+}
+
+/* Full height image header */
+.bgimg-1 {
+    background-position: center;
+    background-size: cover;
+    background-image: url("house2.jpg");
+    opacity: .95;
+    min-height: 100%;
+}
+.w3-bar .w3-button {
+    padding: 16px;
+
+    transition: background-color 0.08s linear;
+}
+.w3-button:hover{
+    transition: background-color 0.08s linear;
+}
+.learnmore{
+  background-color: #fff;
+  color: #000 !important;
+  position: relative;
+  transition: background-color 0.15s linear;
+}
+.learnmore:hover{
+  background-color: #d3d3d3 !important;
+  color: #ccc;
+  position: relative;
+
+  transition: background-color 0.15s linear;
+}
+.shadow{
+   text-shadow: 3px 2px #443;
+}
+</style>
+<!-- SMOOTH SCROLL -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+      // Store hash
+      var hash = this.hash;
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+
+$(function () {
+  $(document).scroll(function () {
+    var $nav = $(".navbar-fixed-top");
+    $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+  });
+});
+
+</script>
+<!-- SMOOTH SCROLL -->
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="#home" class="w3-bar-item w3-button"><i class="fa fa-home"></i> VIP HOME SERVICES</a>
+
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button"><i class="fa fa-th"></i> ABOUT</a>
+      <a href="#services" class="w3-bar-item w3-button"><i class="fa fa-bars"></i> SERVICES</a>
+      <a href="#pricing" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> PRICING</a>
+      <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button"> ABOUT</a>
+  <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button"> SERVICES</a>
+  <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button"> PRICING</a>
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button"> CONTACT</a>
+</nav>
+
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-left w3-text-white" style="padding:80px">
+    <span class="w3-jumbo w3-hide-small shadow">VIP Home Services </span><br>
+    <span class="w3-xxlarge w3-hide-large w3-hide-medium shadow">VIP Home Services</span><br>
+    <div class="w3-row-padding w3-center" style="margin-top:181px"></div>
+    <p><a href="#about" class="w3-button learnmore w3-padding-large w3-large w3-margin-top ">Learn more and start today</a></p>
+  </div>
+
+  <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
+
+  </div>
+</header>
+<!-- About Section -->
+<div class="w3-container" style="padding:64px 40px" id="about">
+  <h2 class="w3-center">ABOUT THE COMPANY</h2>
+  <p class="w3-center w3-large"></p>
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+    <p> VIP Home Services is a licensed home cleaning & organizing business. We serve the residential and commerical clients of greater Vancouver and the North Shore. Our main priority is to address the needs of our clients and exceed their expecations. As home owners ourselves, we empathize with the worries and concerns of our clients. Our professional team of cleaners are trained to work ethically, carefully, and efficiently. As a result, we are fully committed to treating you and your home with the same level of care and respect that we expect for ours.
+    </p>
+  </div>
+</div>
+
+
+<!-- Our Values -->
+<div class="w3-container w3-row w3-center w3-light-grey w3-padding-32">
+  <div class="w3-row-padding w3-center" style="margin-top:18px">
+    <div class="w3-quarter">
+      <i class="fa fa-cog w3-margin-bottom w3-jumbo w3-center"></i>
+      <p class="w3-large">Reliable</p>
+      <p>Reliability is our commitiment to professionalism. Our clients feel more comfortable knowing what to expect.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Trust</p>
+      <p> Trust is key for strong relationships. We work just as hard to maintain your trust as we do to earn it.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-diamond w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Care</p>
+      <p>Care is our main priority at any location. Your home is your property, and we take every stride to treat is as such. </p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-eye w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Detail</p>
+      <p>Attention to detail matters. Recognizing the small things makes a big difference.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Work Section -->
+<div class="w3-container" style="padding:100px 64px" id="services">
+  <h2 class="w3-center">OUR SERVICES</h2>
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+    <p> We provide a wide-range of cleaning services, inluding, but not limited to: Maid Service, Home Cleaning, Detailed Clean, Deep-Scrub, Pressure Wash, Organization, Commercial and Office Clean, etc.
+    </p>
+  </div>
+
+  <div class="w3-half">
+    <div class="w3-row-padding" style="margin-top:64px">
+      <h3>What we offer </h3>
+      <ul>
+        <li>Eco-Friendly Cleaning</li>
+        <li>Professional & Ethical Cleaning</li>
+        <li>Free Consultation</li>
+        <li>Competitive Prices</li>
+        <li>Reliable Services</li>
+        <li>Pressure Washer Cleaning</li>
+      </ul>
+
+    </div>
+  </div>
+
+  <div class="w3-half">
+    <div class="w3-row-padding" style="margin-top:64px">
+      <div class="w3-col l4 m9">
+        <img src="tub.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+      </div>
+      <div class="w3-col l4 m9">
+        <img src="towel.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+      </div>
+      <div class="w3-col l4 m9">
+        <img src="stove.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+      </div>
+    </div>
+
+    <div class="w3-row-padding w3-section">
+      <div class="w3-col l4 m7">
+        <img src="livingroom.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+      </div>
+      <div class="w3-col l4 m7">
+        <img src="kitchen.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+      </div>
+      <div class="w3-col l4 m7">
+        <img src="bed.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+      </div>
+      <div class="w3-row-padding" style="margin-top:64px">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+
+<!-- Pricing Section -->
+<div class="w3-container w3-center w3-light-grey" style="padding:72px 128px" id="pricing">
+  <h2>PRICING</h2>
+  <div class="w3-row-padding" style="margin-top:50px">
+  <h3>Get a free estimate today! </h3>
+  <div class="w3-row-padding" style="margin-top:72px">
+  <p class="w3-medium"> At VIP Home Services, we don't have a standard price for all clients. We believe the needs of each individual are unique to their situation. Therefore, our prices vary from client to client, depending on frequency, cleaning volume, and the nature of work. As a result, we provide a free consultation in order to get you an estimate that will best fit you and your homes needs. Book yours today by sending us a message! Click Below To Contact Us!</p>
+  </div>
+  </div>
+  <div class="w3-row-padding" style="margin-top:128px">
+    <a href="#contact" class="w3-button w3-white"><i class="fa fa-arrow-down w3-margin-right"></i>Contact Us Now!</a>
+  </div>
+  <div class="w3-row-padding" style="margin-top:32px">
+  </div>
+</div>
+
+<!-- Contact Section -->
+<div class="w3-container" style="padding:64px 12px" id="contact">
+  <h2 class="w3-center">CONTACT</h2>
+  <p class="w3-center w3-large">Contact us to book a free consultation.</p>
+  <div class="w3-row-padding" style="margin-top:32px">
+    <div class="w3-half">
+      <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Vanoucer, B.C</p>
+      <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: (604) 726-5311</p>
+      <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: contact@VIPHomeServices.ca</p>
+      <br>
+      <form action="/action_page.php" target="_blank">
+        <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
+        <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
+        <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
+        <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
+        <p>
+          <button class="w3-button w3-black" type="submit">
+            <i class="fa fa-paper-plane"></i> SEND MESSAGE
+          </button>
+        </p>
+      </form>
+    </div>
+    <div class="w3-half">
+      <!-- Add Google Maps -->
+      <div id="googleMap" class="w3-greyscale" style="width:100%;height:510px;"></div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+
+
+  </div>
+</footer>
+
+<!-- Add Google Maps -->
+<script>
+  function myMap()
+{
+  myCenter=new google.maps.LatLng(49.2827, -123.1207);
+  var mapOptions= {
+    center:myCenter,
+    zoom:10, scrollwheel: false, draggable: false,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+
+  var marker = new google.maps.Marker({
+    position: myCenter,
+  });
+  marker.setMap(map);
+}
+
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+    if (mySidebar.style.display === 'block') {
+        mySidebar.style.display = 'none';
+    } else {
+        mySidebar.style.display = 'block';
+    }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBBWF5Sm9kqe7NrNRDArhSso3sf-_-JeB8&callback=myMap"></script>
+<script type="text/javascript" src="https://cdn.ywxi.net/js/1.js" async></script>
+
+</body>
+</html>
